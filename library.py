@@ -35,6 +35,8 @@ def write_file(books, filename):
 
 def check_matches(books, callback):
     for book in books:
+        if 'librarything' not in book:
+            continue
         soup = bs4.BeautifulSoup(book['librarything'], 'html.parser')
         author = soup.find('author')
         title = soup.find('title')
@@ -93,3 +95,10 @@ def add_missing_lt_data(books, api_key):
         time.sleep(2)
         sys.stdout.write('*')
         sys.stdout.flush()
+
+
+def fix_bad_titles(books):
+    def fix_title(book, soup, matches):
+        if matches:
+            book['title'] = soup.find('title').text
+    check_matches(books, fix_title)
