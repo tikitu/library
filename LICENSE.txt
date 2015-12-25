@@ -1,0 +1,8 @@
+The contents of this repository are available under the Creative Commons
+Attribution-Share Alike 3.0 Unported license:
+  http://creativecommons.org/licenses/by-sa/3.0/
+
+Some book data is "Powered by the LibraryThing community": it was collected
+from the "Common Knowledge" section of LibraryThing.com (where it is available
+under the same CC license) via the LibraryThing API:
+  http://www.librarything.com/services/
