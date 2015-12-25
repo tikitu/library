@@ -59,3 +59,10 @@ def extract_url_from_lt(books):
             if url:
                 book['url'] = url
     check_matches(books, set_url)
+
+
+def remove_erroneous_lt_data(books):
+    def clean_book(book, _soup, matches):
+        if not matches:
+            del book['librarything']
+    check_matches(books, clean_book)
