@@ -1,3 +1,4 @@
+import bs4
 import json
 import requests
 import sys
@@ -28,3 +29,28 @@ def add_librarything(books, api_key):
 
 def write_file(books, filename):
     json.dump(books, open(filename, 'w'), indent=1, sort_keys=True)
+
+
+def extract_url_from_lt(books):
+    for book in books:
+        if 'url' in book:
+            continue
+        soup = bs4.BeautifulSoup(book['librarything'], 'html.parser')
+        author = soup.find('author')
+        title = soup.find('title')
+        url = soup.find('url')
+        if not author or not title or not url:
+            continue
+        author = author.text
+        title = title.text
+        url = url.text
+        if author == book['author'] and title == book['title']:
+            match = True
+        else:
+            print u'Tikitu: {title} -- {author}'.format(**book)
+            print u'LT    : {title} -- {author}'.format(
+                    title=title, author=author)
+            print u'url   : {url}'.format(url=url)
+            match = raw_input('[y/N]') == 'y'
+        if match:
+            book['url'] = url
