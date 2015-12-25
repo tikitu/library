@@ -44,7 +44,8 @@
  {
   "author": "Steven Brust", 
   "date": "2015-01-04", 
-  "title": "Hawk"
+  "title": "Hawk", 
+  "url": "http://www.librarything.com/work/13513912"
  }, 
  {
   "author": "Chris Hadfield", 
@@ -84,12 +85,14 @@
  {
   "author": "David Zindell", 
   "date": "2015-02-15", 
-  "title": "The Wild"
+  "title": "The Wild", 
+  "url": "http://www.librarything.com/work/49383"
  }, 
  {
   "author": "David Zindell", 
   "date": "2015-02-19", 
-  "title": "War in Heaven"
+  "title": "War in Heaven", 
+  "url": "http://www.librarything.com/work/129033"
  }, 
  {
   "author": "Eleanor Catton", 
@@ -143,12 +146,14 @@
  {
   "author": "M. John Harrison", 
   "date": "2015-04-26", 
-  "title": "In Viriconium"
+  "title": "In Viriconium", 
+  "url": "http://www.librarything.com/work/798689"
  }, 
  {
   "author": "JM McDermot", 
   "date": "2015-04-26", 
-  "title": "Maze"
+  "title": "Maze", 
+  "url": "http://www.librarything.com/work/14607053"
  }, 
  {
   "author": "Thomas Pynchon", 
@@ -196,7 +201,8 @@
   "author": "whoever", 
   "date": "2015-06-07", 
   "notes": "Gave up on this one.", 
-  "title": "The Dark Between the Stars"
+  "title": "The Dark Between the Stars", 
+  "url": "http://www.librarything.com/work/14387285"
  }, 
  {
   "author": "Tiptree / Sheldon", 
@@ -257,13 +263,15 @@
  {
   "author": "Hal Duncan", 
   "date": "2015-07-14", 
-  "title": "Vellum"
+  "title": "Vellum", 
+  "url": "http://www.librarything.com/work/47894"
  }, 
  {
   "author": "David Roberts", 
   "date": "2015-07-25", 
   "librarything": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<response stat=\"ok\"><ltml xmlns=\"http://www.librarything.com/\" version=\"1.1\"><item id=\"660660\" type=\"work\"><author id=\"4220\" authorcode=\"robertsdavid\">David Roberts</author><title>Four Against the Arctic: Shipwrecked for Six Years at the Top of the World</title><rating>6.8</rating><url>http://www.librarything.com/work/660660</url><commonknowledge><fieldList><field type=\"2\" name=\"placesmentioned\" displayName=\"Important places\"><versionList><version id=\"7228312\" archived=\"0\" lang=\"eng\"><date timestamp=\"1402463191\">Wed, 11 Jun 2014 01:06:31 -0400</date><person id=\"277182\"><name>jefbra</name><url>http://www.librarything.com/profile/jefbra</url></person><factList><fact>Arctic</fact><fact>Arctic Ocean</fact></factList></version></versionList></field></fieldList></commonknowledge></item><legal>By using this data you agree to the LibraryThing API terms of service.</legal></ltml></response>\n", 
-  "title": "Shipwrecked on the Top of the World"
+  "title": "Shipwrecked on the Top of the World", 
+  "url": "http://www.librarything.com/work/660660"
  }, 
  {
   "author": "JM McDermott", 
@@ -282,7 +290,8 @@
  {
   "author": "Jeff Vandermeer", 
   "date": "2015-08-09", 
-  "title": "The Southern Reach Trilogy"
+  "title": "The Southern Reach Trilogy", 
+  "url": "http://www.librarything.com/work/15268758"
  }, 
  {
   "author": "Helen DeWitt", 
@@ -294,7 +303,8 @@
  {
   "author": "ed. Gardner Dozois", 
   "date": "2015-08-24", 
-  "title": "Best New SF 21"
+  "title": "Best New SF 21", 
+  "url": "http://www.librarything.com/work/107443"
  }, 
  {
   "author": "E.E. \u201cDoc\u201d Smith", 
@@ -396,7 +406,8 @@
   "author": "Emily Short", 
   "date": "2015-12-08", 
   "librarything": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<response stat=\"fail\"><err code=\"105\">Could not determine data ID to retrieve</err></response>\n", 
-  "title": "The Annals of the Parrigues"
+  "title": "The Annals of the Parrigues", 
+  "url": "https://emshort.wordpress.com/2015/12/07/procjam-entries-nanogenmo-and-my-generated-generation-guidebook/"
  }, 
  {
   "author": "Andrew Hunt & David Thomas", 

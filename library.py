@@ -17,6 +17,8 @@ def add_librarything(books, api_key):
     for book in books:
         if 'librarything' in book:
             continue
+        if 'url' in book:
+            continue
         response = requests.get(
                 url, params={'method': 'librarything.ck.getwork',
                              'name': book['title'],
@@ -66,3 +68,10 @@ def remove_erroneous_lt_data(books):
         if not matches:
             del book['librarything']
     check_matches(books, clean_book)
+
+
+def add_urls_by_hand(books):
+    for book in books:
+        if 'url' not in book:
+            print u'Tikitu: {title} -- {author}'.format(**book)
+            book['url'] = raw_input('url: ')
