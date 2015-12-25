@@ -75,3 +75,21 @@ def add_urls_by_hand(books):
         if 'url' not in book:
             print u'Tikitu: {title} -- {author}'.format(**book)
             book['url'] = raw_input('url: ')
+
+
+def add_missing_lt_data(books, api_key):
+    api_url = 'http://www.librarything.com/services/rest/1.1/'
+    for book in books:
+        if 'librarything' in book:
+            continue
+        if 'url' not in book or not book['url'].startswith('http://www.librarything.com/work/'):
+            continue
+        work_id = book['url'].split('/')[-1]
+        response = requests.get(
+                api_url, params={'method': 'librarything.ck.getwork',
+                                 'id': work_id,
+                                 'apikey': api_key})
+        book['librarything'] = response.content
+        time.sleep(2)
+        sys.stdout.write('*')
+        sys.stdout.flush()
