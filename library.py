@@ -102,3 +102,10 @@ def fix_bad_titles(books):
         if matches:
             book['title'] = soup.find('title').text
     check_matches(books, fix_title)
+
+
+def fix_bad_authors(books):
+    def fix_author(book, soup, matches):
+        if matches:
+            book['author'] = soup.find('author').text
+    check_matches(books, fix_author)
