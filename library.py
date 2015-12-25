@@ -1,3 +1,4 @@
+import json
 import requests
 import sys
 import time
@@ -23,3 +24,7 @@ def add_librarything(books, api_key):
         time.sleep(2)
         sys.stdout.write('*')
         sys.stdout.flush()
+
+
+def write_file(books, filename):
+    json.dump(books, open(filename, 'w'), indent=1, sort_keys=True)
