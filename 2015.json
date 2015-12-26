@@ -281,7 +281,7 @@
   "url": "http://www.librarything.com/work/660660"
  }, 
  {
-  "author": "J. M. McDermott",
+  "author": "J. M. McDermott", 
   "date": "2015-07-26", 
   "librarything": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<response stat=\"ok\"><ltml xmlns=\"http://www.librarything.com/\" version=\"1.1\"><item id=\"16131264\" type=\"work\"><author id=\"2205918\" authorcode=\"mcdermottj\">J. McDERMOTT</author><title>Straggletaggle</title><rating>0</rating><url>http://www.librarything.com/work/16131264</url><commonknowledge/></item><legal>By using this data you agree to the LibraryThing API terms of service.</legal></ltml></response>\n", 
   "title": "Straggletaggle", 
@@ -295,7 +295,7 @@
   "url": "http://www.librarything.com/work/6058"
  }, 
  {
-  "author": "Jeff VanderMeer",
+  "author": "Jeff VanderMeer", 
   "date": "2015-08-09", 
   "librarything": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<response stat=\"ok\"><ltml xmlns=\"http://www.librarything.com/\" version=\"1.1\"><item id=\"15268758\" type=\"work\"><author id=\"1882\" authorcode=\"vandermeerjeff\">Jeff VanderMeer</author><title>Area X: The Southern Reach Trilogy: Annihilation; Authority; Acceptance</title><rating>8.1</rating><url>http://www.librarything.com/work/15268758</url><commonknowledge><fieldList><field type=\"4\" name=\"awards\" displayName=\"Awards and honors\"><versionList><version id=\"8693050\" archived=\"0\" lang=\"eng\"><date timestamp=\"1447174599\">Tue, 10 Nov 2015 11:56:39 -0500</date><person id=\"882533\"><name>souloftherose</name><url>http://www.librarything.com/profile/souloftherose</url></person><factList><fact>Locus Award Finalist (Science Fiction Novel, 2015)</fact><fact>World Fantasy Award Nominee (Novel, 2015)</fact></factList></version></versionList></field><field type=\"23\" name=\"series\" displayName=\"Series\"><versionList><version id=\"7656110\" archived=\"0\" lang=\"eng\"><date timestamp=\"1416349770\">Tue, 18 Nov 2014 17:29:30 -0500</date><person id=\"982703\"><name>sandstone78</name><url>http://www.librarything.com/profile/sandstone78</url></person><factList><fact>Southern Reach Trilogy (100|full series)</fact></factList></version></versionList></field></fieldList></commonknowledge></item><legal>By using this data you agree to the LibraryThing API terms of service.</legal></ltml></response>\n", 
   "title": "Area X: The Southern Reach Trilogy: Annihilation; Authority; Acceptance", 
@@ -374,7 +374,7 @@
  {
   "author": "Peter F Drucker", 
   "date": "2015-11-15", 
-  "title": "The Effective Executive",
+  "title": "The Effective Executive", 
   "url": "http://www.amazon.com/The-Effective-Executive-Definitive-Harperbusiness/dp/0060833459"
  }, 
  {
