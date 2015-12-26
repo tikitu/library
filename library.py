@@ -1,4 +1,5 @@
 import bs4
+from datetime import date
 import json
 import requests
 import sys
@@ -116,3 +117,26 @@ def output_for_blog(books):
     for book in books:
         extra = book.get('notes', '')
         print template.format(extra=extra, **book)
+
+
+def new_book(title, api_key):
+    url = 'http://www.librarything.com/services/rest/1.1/'
+    response = requests.get(
+            url, params={'method': 'librarything.ck.getwork',
+                         'name': title,
+                         'apikey': api_key})
+    librarything = response.content
+    soup = bs4.BeautifulSoup(librarything, 'html.parser')
+    author = soup.find('author')
+    title = soup.find('title')
+    url = soup.find('url')
+    if author and title and url:
+        return {
+            'author': author.text,
+            'title': title.text,
+            'librarything': librarything,
+            'url': url.text,
+            'date': date.today().isoformat()
+        }
+    else:
+        return response.content
