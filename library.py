@@ -109,3 +109,10 @@ def fix_bad_authors(books):
         if matches:
             book['author'] = soup.find('author').text
     check_matches(books, fix_author)
+
+
+def output_for_blog(books):
+    template = u'* [*{title}*]({url}), {author}. {extra}'
+    for book in books:
+        extra = book.get('notes', '')
+        print template.format(extra=extra, **book)
