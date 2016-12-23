@@ -85,7 +85,7 @@ def add_missing_lt_data(books, api_key):
     for book in books:
         if 'librarything' in book:
             continue
-        if 'url' not in book or not book['url'].startswith('http://www.librarything.com/work/'):
+        if 'url' not in book or not book['url'].startswith('https://www.librarything.com/work/'):
             continue
         work_id = book['url'].split('/')[-1]
         response = requests.get(
