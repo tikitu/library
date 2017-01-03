@@ -140,3 +140,9 @@ def new_book(title, api_key):
         }
     else:
         return response.content
+
+
+def fix_bs_urls(books):
+    for book in books:
+        if 'url' in book and str(book['url']).startswith('<'):
+            book['url'] = book['url'].get_text()
