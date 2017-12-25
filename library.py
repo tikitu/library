@@ -113,7 +113,7 @@ def fix_bad_authors(books):
 
 
 def output_for_blog(books):
-    template = u'* [*{title}*]({url}), {author}. {extra} ({s}-{f})'
+    template = u'* *{title}*, {author}. {extra} ({s}-{f})'
     for book in books:
         book.setdefault('finished', '')
         extra = book.get('notes', '')
